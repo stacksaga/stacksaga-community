@@ -1,0 +1,117 @@
+name: 🐛 Bug Report
+description: Report a defect in a StackSaga module
+title: "[Bug]: "
+labels: ["bug", "needs-info"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        **Before submitting:** please search [existing issues](../../issues) to avoid duplicates. Note that this license does not permit modifying or patching the compiled artifacts — please describe the defect here rather than attaching a patch, and we'll take it from there.
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Affected Module
+      description: Which StackSaga module does this bug affect?
+      options:
+        - stacksaga-spring-boot-starter
+        - stacksaga-kafka-spring-boot-starter
+        - stacksaga-mysql-reactive-support
+        - stacksaga-cassandra-reactive-support
+        - stacksaga-ring-coordinator
+        - stacksaga-ring-coordinator-connector
+        - stacksaga-trace-window-connector
+        - Other / Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: stacksaga-version
+    attributes:
+      label: StackSaga Version
+      description: The exact version(s) of the affected module(s), e.g. from your pom.xml/build.gradle
+      placeholder: "e.g. 1.4.2"
+    validations:
+      required: true
+
+  - type: input
+    id: spring-boot-version
+    attributes:
+      label: Spring Boot Version
+      placeholder: "e.g. 3.3.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: transport
+    attributes:
+      label: Transport Type
+      options:
+        - Synchronous / Direct
+        - Kafka (event-driven)
+        - Both
+        - Not applicable
+    validations:
+      required: false
+
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      options:
+        - MySQL
+        - PostgreSQL
+        - Cassandra / ScyllaDB
+        - Not applicable
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal Reproduction Steps
+      description: Step-by-step instructions to reproduce the issue. A minimal sample project or code snippet is very helpful.
+      placeholder: |
+        1. Configure '...'
+        2. Trigger '...'
+        3. Observe '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs / Stack Trace
+      description: Please paste any relevant logs, stack traces, or error output. This will be automatically formatted as code.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have included enough detail to reproduce the issue
+          required: true
