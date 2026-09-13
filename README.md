@@ -68,7 +68,7 @@ Place it in your README, about/credits page, or public documentation.
 
 - Documentation: [docs.stacksaga.org](https://docs.stacksaga.org)
 - Maven Central: `org.stacksaga`
-- Website: [PROJECT_WEBSITE_URL]
+- Website: [www.stacksaga.org](https://www.stacksaga.org)
 
 ## 📜 Code of Conduct
 
