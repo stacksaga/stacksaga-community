@@ -15,7 +15,7 @@ StackSaga is a distributed saga orchestration framework for Spring Boot, support
 
 ## 📄 License
 
-StackSaga is distributed under the **StackSaga Artifact License 1.0 (SSAL-1.0)**. Key points:
+StackSaga is distributed under the **[StackSaga Artifact License 1.0 (SSAL-1.0)](https://stacksaga.org/legal/license/ssal-1.0)**. Key points:
 
 - ✅ Free to use — internal, development, testing, and commercial production
 - ✅ Free to embed as an unmodified dependency in your own applications
