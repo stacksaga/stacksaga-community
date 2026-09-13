@@ -1,3 +1,10 @@
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/stacksaga-light.png">
+  <source media="(prefers-color-scheme: light)" srcset=".github/stacksaga-dark.png">
+  <img alt="StackSaga Logo" src=".github/assets/logo-light.png" width="200">
+</picture>
+
 # StackSaga Community
 
 Community hub for StackSaga — bug reports, discussions, and docs for all StackSaga framework modules.
