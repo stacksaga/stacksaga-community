@@ -45,7 +45,7 @@ Please **do not** open a public issue for security vulnerabilities. Use [GitHub 
 | Security patches | Best-effort | Included |
 | Direct technical assistance | ❌ | ✅ |
 
-Interested in commercial support or a SaaS/managed-hosting license? Contact **[LICENSING_CONTACT_EMAIL]**.
+Interested in commercial support or a SaaS/managed-hosting license? Contact **info@stacksaga.org**.
 
 ## 🏷️ Attribution
 
